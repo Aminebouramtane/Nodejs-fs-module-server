@@ -8,3 +8,12 @@ const fs  = require("fs");
 //         console.log(data);
 //     }
 // })
+
+
+// fs.readFile("./amine.text","utf8",(err,data)=>{
+//     if(err){
+//         console.log(err);
+//     }else{
+//         console.log(data);
+//     }
+// })
