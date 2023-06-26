@@ -18,9 +18,18 @@ const fs  = require("fs");
 //     }
 // })
 
-fs.appendFile("./amine.text","This is my new content",(err)=>{
-    if (err) {
-        console.log(err);
-    }
-    console.log("data has been wrote succussfuly");
-})
+// fs.appendFile("./amine.text","This is my new content",(err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     console.log("data has been wrote succussfuly");
+// })
+
+
+// fs.rename('./amine.text', './new.text', (err) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   console.log('File renamed successfully.');
+// });
