@@ -33,3 +33,12 @@ const fs  = require("fs");
 //   }
 //   console.log('File renamed successfully.');
 // });
+
+
+fs.unlink('path/file.txt', (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('File deleted successfully.');
+});
