@@ -1,4 +1,4 @@
-const { log } = require("console");
+
 const fs  = require("fs");
 
 // fs.writeFile("amine.text","hey from fs file",(err,data)=>{
@@ -10,13 +10,13 @@ const fs  = require("fs");
 // })
 
 
-// fs.readFile("./amine.text","utf8",(err,data)=>{
-//     if(err){
-//         console.log(err);
-//     }else{
-//         console.log(data);
-//     }
-// })
+fs.readFile("./new.text","utf8",async (err,data)=>{
+    if(err){
+         await console.log(err);
+    }else{
+        await console.log(data);
+    }
+})
 
 // fs.appendFile("./amine.text","This is my new content",(err)=>{
 //     if (err) {
@@ -35,10 +35,10 @@ const fs  = require("fs");
 // });
 
 
-fs.unlink('path/file.txt', (err) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log('File deleted successfully.');
-});
+// fs.unlink('path/file.txt', (err) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   console.log('File deleted successfully.');
+// });
